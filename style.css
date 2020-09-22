@@ -4,8 +4,26 @@
     padding: 0;
 }
 
+body {
+    color: red;
+}
+
 [class*="col-"] {
-    height: 100px;
-    background-color: lightblue;
+    height: 60px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+[class*="col-"] > [class*="col-"] {
+    height: 100%;
+    background-color: white;
     border: 1px solid black;
+}
+
+[class*="col-"] >
+[class*="col-"] >
+[class*="col-"] {
+    height: 100%;
+    background-color: red;
+    border: 1px solid white;
 }
